@@ -1,20 +1,32 @@
 # Pet Food Dispenser
 
 # Overview
-After completing the basic OnShape and CircuitPython assignments, the next asignnment was the first Engineering III project. The project did not have many contraints. Its main goal was to be a challenge. No specific task was given, but the project had to make use of CircuitPython and OnShape.
+After completing the basic OnShape and CircuitPython assignments, the next assignment was the first Engineering III project. The project did not have many constraints. Its main goal was to be a challenging project. No specific task was given, but the project had to make use of CircuitPython and CAD (Computer-Aided Design).
 
-For the first Engineering III project, we decided to create a pet food dispenser. Both having pets, a pet food dispenser sounded like an applicable and fun idea. There were not many contraints on this project. The main constraint was that the project had to be challenging.
+For the first Engineering III project, we decided to create a pet food dispenser. Both having pets, a pet food dispenser sounded like an applicable and fun idea. There were not many constraints on this project. The main constraint was that the project had to be a challenge.
 
 The tools that were used for this project are as follows:
 
-* OnShape - OnShape was used for CAD (Computer-Aided Design). OnShape was helpful because it is a cloud-based program. Similar to GoogleDocs, it runs on "the web." Unlike Solidworks, another CAD program, OnShape allows for collaboration at the same time.
+* OnShape - OnShape was used for CAD. OnShape was helpful because it is a cloud-based program. It automatically saves work to the cloud - a useful measure against data loss. Unlike Solidworks, another CAD program, OnShape allows for collaboration at the same time.
 
-* PyCharm - PyCharm was used for CircuitPython. PyCharm is useful in that it is compatible with GitHub commits, pushes, and puls. It also has spell checks, a built-in serial monitor, and can suggest code improvements.
+* PyCharm - PyCharm was used for CircuitPython. PyCharm is useful in that it is compatible with GitHub commits, pushes, and pulls. It also has spell checks, a built-in serial monitor, and can suggest code improvements.
 
-* Caret - Similar to PyCharm, Caret was used for CircuitPython. Note that **Caret is for Chromebook.** PyCharm operates only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does not have a built-in serial monitor, so the application **Beagle Term** (a serial monitor) is useful to use with it.
+* Caret - Similar to PyCharm, Caret was used for CircuitPython. Note that **Caret is for Chromebook.** PyCharm operates only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does not have a built-in serial monitor, so the application **Beagle Term** (serial monitor) goes hand-in-hand with it.
 
 ## Brainstorm
-Currently, the plan is to creat
+Currently, the plan is to create a horizontally-shaped pet food dispenser that utilizes an Archimedes screw design. The basic components of the design would be as follows:
+
+* An Archimedes screw, rotated by a continuous rotation servo.
+
+* A hole-shaped dispensing area for pouring the food into. The rate by which food was supplied to a pet would be determined by the speed of the continuous-rotation servo.
+
+* An inclined plane for the food to travel on after being transported by the Archimedes screw. The inclined plane would lead to a pet food bowl or to a space where the pet could eat the food.
+
+Here is a picture of the possible design:
+![]{}
+
+Here is the URL to the OnShape document: 
+...
 
 # Lessons Learned
 Work in progress...
