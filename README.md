@@ -1,3 +1,4 @@
+
 # Pet Food Dispenser
 
 # Overview
@@ -23,11 +24,15 @@ Currently, the plan is to create a horizontally-shaped pet food dispenser that u
 * An inclined plane for the food to travel on after being transported by the Archimedes screw. The inclined plane would lead to a pet food bowl or to a space where the pet could eat the food.
 
 Here is a picture of the possible design:
-![]{}
+![Pet Food Dispenser Idea](./Pet_Food_Dispenser_Design_Image.jpg)
 
-Here is the URL to the OnShape document: 
-...
+**Note - citation for the website where the image was taken from:** 
+Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
+
+**EasyBib was used for generating the MLA citation.
+
+Here is the link to the OnShape document: 
+[OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
 
 # Lessons Learned
 Work in progress...
-
