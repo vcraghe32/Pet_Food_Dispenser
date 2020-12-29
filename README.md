@@ -29,7 +29,7 @@ Here is a picture of the possible design:
 **Note - citation for the website where the image was taken from:** 
 Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
 
-**EasyBib was used for generating the MLA citation.
+**EasyBib was used for generating the MLA citation.**
 
 Here is the link to the OnShape document: 
 [OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
