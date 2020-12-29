@@ -8,7 +8,7 @@ For the first Engineering III project, we decided to create a pet food dispenser
 
 The tools that were used for this project are as follows:
 
-* OnShape - OnShape was used for CAD. OnShape was helpful because it is a cloud-based program. It automatically saves work to the cloud - a useful measure against data loss. Unlike Solidworks, another CAD program, OnShape allows for collaboration at the same time.
+* OnShape - OnShape was used for CAD. OnShape was helpful because it is a cloud-based program. It automatically saves work to the cloud. Working on the cloud is a useful measure against data loss. Unlike Solidworks, another CAD program, OnShape allows for collaboration at the same time.
 
 * PyCharm - PyCharm was used for CircuitPython. PyCharm is useful in that it is compatible with GitHub commits, pushes, and pulls. It also has spell checks, a built-in serial monitor, and can suggest code improvements.
 
