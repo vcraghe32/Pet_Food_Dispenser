@@ -36,7 +36,15 @@ Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hacka
 
 The Archimedes screw design was rejected because of its inconvenience in laser cutting. The scew would have used much 3D printing reasources, so the alternative was to develop a 2D design that could expand. It was unideal. 
 
-# More information on the gear and wheel designs coming soon...
+## Water wheel
+<img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Brainstorm.JPG" width="450">
+
+Our final brainstorm idea that we will be using is a water-wheel like design that will dispense pet food instead of water. The food flows into the small containers inside the food wheel, and then moves in a circular motion with the pull of gravity and the push of a continuous rotation servo, and drops when the container faces downwards. The food is contained by rubber hinge flaps while it is being filled up to keep the small containers in the food wheel closed. When the wheel does a complete rotation a certain quanity of food is dispensed, so it is easy to measure and provide serving sizes. In addition, when the food drops from the small containers into the box, an inclined plane will bring the food down to the bowl. 
+## Design Versions 
+### Version 1
+<img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Planning.JPG" width="400">
+
+These are the measurments for the first(current) versions of our water wheel, hinge(for opening the battery holder/food container), and funnel walls. The water wheel design has worked so far, however the funnel design was difficult  to mate together in OnShape so we decided to create a box with a  3D design insert that would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
 
 Here is the link to the OnShape document: 
 [OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
