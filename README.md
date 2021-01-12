@@ -1,12 +1,12 @@
 
 # Pet Food Dispenser
 
-[Project Document](https://docs.google.com/document/d/1ZKXdEp18WFhlqO-TDtYp-zZMlVuGLO5934JrBp6huCs/edit?usp=sharing)
+[Project GoogleDoc](https://docs.google.com/document/d/1ZKXdEp18WFhlqO-TDtYp-zZMlVuGLO5934JrBp6huCs/edit?usp=sharing)
 
 # Overview
 After completing the basic OnShape and CircuitPython assignments, the next assignment was the first Engineering III project. The project did not have many constraints. Its main goal was to be a challenging project. No specific task was given, but the project had to make use of CircuitPython and CAD (Computer-Aided Design).
 
-For the first Engineering III project, we decided to create a pet food dispenser. Both having pets, a pet food dispenser sounded like an applicable and fun idea. There were not many constraints on this project. The main constraint was that the project had to be a challenge.
+For the first Engineering III project, we (Violet Craghead-Way and Luke Frank) decided to create a pet food dispenser. Both having pets, a pet food dispenser sounded like an applicable and fun idea. There were not many constraints on this project. The main constraint was that the project had to be a challenge.
 
 The tools that were used for this project are as follows:
 
@@ -17,7 +17,8 @@ The tools that were used for this project are as follows:
 * Caret - Similar to PyCharm, Caret was used for CircuitPython. Note that **Caret is for Chromebook.** PyCharm operates only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does not have a built-in serial monitor, so the application **Beagle Term** (serial monitor) goes hand-in-hand with it.
 
 ## Brainstorm
-Currently, the plan is to create a horizontally-shaped pet food dispenser that utilizes an Archimedes screw design. The basic components of the design would be as follows:
+
+Initially, the plan was to create a horizontally-shaped pet food dispenser that utilized an Archimedes screw design. The basic components of the design would be as follows:
 
 * An Archimedes screw, rotated by a continuous rotation servo.
 
@@ -25,13 +26,17 @@ Currently, the plan is to create a horizontally-shaped pet food dispenser that u
 
 * An inclined plane for the food to travel on after being transported by the Archimedes screw. The inclined plane would lead to a pet food bowl or to a space where the pet could eat the food.
 
-Here is a picture of the possible design:
-![Pet Food Dispenser Idea](./Pet_Food_Dispenser_Design_Image.jpg)
+Here is a picture of the Archimedes screw design:
+![Pet Food Dispenser Archimdes Screw Design](./Media/Pet_Food_Dispenser-Archimedes_Screw_Design_Idea.JPG.jpg)
 
 **Note - citation for the website where the image was taken from:** 
 Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
 
 **EasyBib was used for generating the MLA citation.**
+
+The Archimedes screw design was rejected because of its inconvenience in laser cutting. The scew would have used much 3D printing reasources, so the alternative was to develop a 2D design that could expand. It was unideal. 
+
+# More information on the gear and wheel designs coming soon...
 
 Here is the link to the OnShape document: 
 [OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
