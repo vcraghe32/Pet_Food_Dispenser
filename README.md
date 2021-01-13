@@ -16,6 +16,12 @@ The tools that were used for this project are as follows:
 
 * Caret - Similar to PyCharm, Caret was used for CircuitPython. Note that **Caret is for Chromebook.** PyCharm operates only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does not have a built-in serial monitor, so the application **Beagle Term** (serial monitor) goes hand-in-hand with it.
 
+# The Problem And Goal 
+
+Dealing with hungry pets is frustrating. Whether it is the mournful meow of a cat or the piercing puppy eyes of a dog, hungry pets can be both distracting and irritating. We each have two pets (a dog and cat for Luke and two dogs for Violet), so we understand the struggle.
+
+Luckily, with a pet food dispenser, meal time for pets can be made into a more entertaining and enjoyable experience. Pets would no loner come pleading to humans for food because their food source would be in one place. Additionally, an automated pet food dispsenser would give pets a concrete sense of a meal time schedule which would be hard to rival when done by humans. 
+
 ## Brainstorm
 
 ### Archimedes Screw
