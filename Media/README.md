@@ -9,7 +9,7 @@ A challenge of this project was to be creative and work without instructions. A 
 ### Archimedes Screw
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Archimedes_Screw_Design_Idea.JPG.jpg" width="350">
 
-This was our original idea for the dispensing of the pet food. As the screw moves around, it pushes food down an inclined plane towards the bowl. 
+This was our original idea for the dispensing of the pet food. As the screw moves around, it pushes food up an inclined plane and down a slide towards the bowl. 
 ### Two Gears
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Two_Gears_Design_Brainstorm.JPG" width="450"><img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Two_Gears_Design_Full_View.JPG.jpg" width="400">
 
