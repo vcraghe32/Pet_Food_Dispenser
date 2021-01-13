@@ -18,6 +18,9 @@ The tools that were used for this project are as follows:
 
 ## Brainstorm
 
+### Archimedes Screw
+![Pet Food Dispenser Archimdes Screw Design](./Media/Pet_Food_Dispenser-Archimedes_Screw_Design_Idea.JPG.jpg)
+
 Initially, the plan was to create a horizontally-shaped pet food dispenser that utilized an Archimedes screw design. The basic components of the design would be as follows:
 
 * An Archimedes screw, rotated by a continuous rotation servo.
@@ -27,7 +30,6 @@ Initially, the plan was to create a horizontally-shaped pet food dispenser that 
 * An inclined plane for the food to travel on after being transported by the Archimedes screw. The inclined plane would lead to a pet food bowl or to a space where the pet could eat the food.
 
 Here is a picture of the Archimedes screw design:
-![Pet Food Dispenser Archimdes Screw Design](./Media/Pet_Food_Dispenser-Archimedes_Screw_Design_Idea.JPG.jpg)
 
 **Note - citation for the website where the image was taken from:** 
 Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
@@ -35,8 +37,11 @@ Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hacka
 **EasyBib was used for generating the MLA citation.**
 
 The Archimedes screw design was rejected because of its inconvenience in laser cutting. The scew would have used much 3D printing reasources, so the alternative was to develop a 2D design that could expand. It was unideal. 
+### Two Gears 
+<img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Two_Gears_Design_Brainstorm.JPG" width="450"><img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Two_Gears_Design_Full_View.JPG.jpg" width="400">
 
-## Water wheel
+Our second idea was to have two gears: one with a hole that would create a pathway when aligned with the hole on the wall, and another that would be attached to that gear and the 180 servo. The wheel would turn 90 degrees, stay for a few seconds to dispense the right amount, and then go back to its original position covering the hole. This design would easily crush the food pellets, and the weight put on the servo would be very heavy considering the weight of the pet food. Because of these reasons, we brainstormed again.
+### Water Wheel
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Brainstorm.JPG" width="450">
 
 Our final brainstorm idea that we will be using is a water-wheel like design that will dispense pet food instead of water. The food flows into the small containers inside the food wheel, and then moves in a circular motion with the pull of gravity and the push of a continuous rotation servo, and drops when the container faces downwards. The food is contained by rubber hinge flaps while it is being filled up to keep the small containers in the food wheel closed. When the wheel does a complete rotation a certain quanity of food is dispensed, so it is easy to measure and provide serving sizes. In addition, when the food drops from the small containers into the box, an inclined plane will bring the food down to the bowl. 
