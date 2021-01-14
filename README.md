@@ -32,7 +32,7 @@ dog, hungry pets can be both distracting and irritating. We each have two pets
 (a dog and cat for Luke and two dogs for Violet), so we understand the struggle.
 
 Luckily, with a pet food dispenser, meal time for pets can be made into a more entertaining and enjoyable experience. 
-Pets would no loner come pleading to humans for their food because their food source would be in one place. 
+Pets would no longer come pleading to humans for their food because their food source would be in one place. 
 Additionally, an automated pet food dispenser would give pets a concrete sense of a meal time schedule 
 which would be hard to rival when done by humans. 
 
