@@ -2,7 +2,7 @@
 # Pet Food Dispenser
 
 **Note** - For more information about this project, please feel free to visit our [project GoogleDoc](https://docs.google.com/document/d/1ZKXdEp18WFhlqO-TDtYp-zZMlVuGLO5934JrBp6huCs/edit?usp=sharing). The project GoogleDoc contains inventory, idea brainstorms, schedule, cute pet pictures, and initial project ideas.
-
+[project Whiteboard](https://www.whiteboard.chat/board/98881ae5-cb39-46fe-b3e7-05e48ab4fd4d-pgNum-1).
 # Overview
 After completing the basic OnShape and CircuitPython assignments, the next assignment was the first Engineering III 
 project. The project did not have many constraints. Its main goal was to be a challenging project. No specific task was 
