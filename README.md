@@ -55,10 +55,22 @@ Our final brainstorm idea that we will be using is a water-wheel like design tha
 
 These are the measurments for the first(current) versions of our water wheel, hinge(for opening the battery holder/food container), and funnel walls. The water wheel design has worked so far, however the funnel design was difficult  to mate together in OnShape so we decided to create a box with a  3D design insert that would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
 
+# Schedule 
+
+| Date: | Goal: |
+| --- | --- |
+| As of 1/13/21: | A design idea for CAD involving a food wheel, funnel, and slide. |
+| 1/27/21 | A draft of what the 3D design will be. It does not have to be created in OnShape, but there should be a plan for how the design will be made. |
+| 2/3/21: | A rough draft of 3D design on OnShape. The funnel, wheel, and slide are assembled in a way that they would be able to work together |
+| 2/10/21: | A revised draft of 3D design on OnShape and a rough draft of code that can make the food wheel rotate with a continuous rotation servo. |
+| 2/17/21: | A revised draft of the continuous rotation servo code with additional code for operating an LCD and common anode RGB LED. |
+
 # OnShape Document:
 
 Here is the link to the OnShape document: 
 [OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
+
+This OnShape document will contain the CAD for our project. 
 
 # Lessons Learned
 Work in progress...
