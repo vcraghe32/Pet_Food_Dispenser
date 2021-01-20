@@ -93,10 +93,16 @@ would act as inclined planes around the hole of the box so that the food moves d
 | Date: | Goal: |
 | --- | --- |
 | As of 1/13/21: | A design idea for CAD involving a food wheel, funnel, and slide. |
+
 | 1/27/21 | A draft of what the 3D design will be. It does not have to be created in OnShape, but there should be a plan for how the design will be made. |
-| 2/3/21: | A rough draft of 3D design on OnShape. The funnel, wheel, and slide are assembled in a way that they would be able to work together |
-| 2/10/21: | A revised draft of 3D design on OnShape and a rough draft of code that can make the food wheel rotate with a continuous rotation servo. |
-| 2/17/21: | A revised draft of the continuous rotation servo code with additional code for operating an LCD and common anode RGB LED. |
+
+| 2/10/21: | A rough draft of 3D design on OnShape. The funnel, wheel, and slide are assembled in a way that they would be able to work together. Additionally, a rough draft of the code. |
+
+| 2/17/21: | A revised draft of the 3D design on OnShape, as well as the code. |
+
+| 2/24/21: | Another revised 3D design on OnShape. Ideally, the this or the previous design can be tested in the Sigma Lab. If it does not work, then one final 3D design will be created. |
+
+| 2/31/21: | The final 3D design on OnShape. |
 
 # OnShape Document:
 
