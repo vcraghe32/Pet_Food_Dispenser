@@ -107,4 +107,4 @@ Here is the link to the OnShape document:
 This OnShape document will contain the CAD for our project. 
 
 # Lessons Learned
-Work in progress...
+  Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everyhing with the standard servo arm and base instead of the microservo arm and base.
