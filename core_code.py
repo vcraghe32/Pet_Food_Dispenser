@@ -1,5 +1,3 @@
-# This file will be used for making LCD code.
-
 import time
 import board
 import pulseio
