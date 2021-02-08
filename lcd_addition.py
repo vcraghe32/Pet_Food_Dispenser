@@ -1,4 +1,4 @@
-# This file will be used for adding on RGB code to the LCD code.
+# This file will be used for making LCD code.
 
 import time
 import board
@@ -6,7 +6,6 @@ import pulseio
 from adafruit_motor import servo
 from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
 from lcd.lcd import LCD
-
 
 # time.monotonic() will be tried in place of time.time().
 # time.monotonic() is a float, whereas time.time() is an integer,
@@ -59,6 +58,15 @@ Servo_Wait_Time = 10. + time.monotonic()
 Print_Time = 2. + time.monotonic()
 Message_Time = True
 # It is better for Message_Time to be a boolean data value than a 0 or 1.
+
+r1 = board.D1
+g1 = board.D2
+b1 = board.D4
+
+# Digital IO pins that work with PWM: 1, 2, 3, 4, 5, 7, 9, 11, 12, and 13.
+# Not 0, 6, 8, and 10.
+
+myRGB1 = RGB_PWM(r1, g1, b1)
 
 while True:
 
