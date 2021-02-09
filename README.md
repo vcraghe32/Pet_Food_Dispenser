@@ -25,7 +25,7 @@ The tools that were used for this project are as follows:
   only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does 
   not have a built-in serial monitor, so the application **Beagle Term** (serial monitor) goes hand-in-hand with it.
 
-# Another note - here is the link to the T-Slot document if it is needed in the future: [T-Slot Link](https://cvilleschools.onshape.com/documents/5791a167e4b03c2aa6af3b35/w/8528f1c2d733302d4632f38e/e/7eab6eb8ff7dea85b9cc6a87)
+### If it is helpful, here is the link to the T-Slot feature OnShape document: [T-Slot Link](https://cvilleschools.onshape.com/documents/5791a167e4b03c2aa6af3b35/w/8528f1c2d733302d4632f38e/e/7eab6eb8ff7dea85b9cc6a87)
 
 # The Problem And Goal 
 
