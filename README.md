@@ -109,4 +109,11 @@ Here is the link to the OnShape document:
 This OnShape document will contain the CAD for our project. 
 
 # Lessons Learned
-  Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everyhing with the standard servo arm and base instead of the microservo arm and base.
+
+* Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everything with the standard servo arm and base instead of the micro servo arm and base.
+
+* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
+ 
+* "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being unnecessarily used up. 
+
+* Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
