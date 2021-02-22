@@ -25,6 +25,8 @@ The tools that were used for this project are as follows:
   only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does 
   not have a built-in serial monitor, so the application **Beagle Term** (serial monitor) goes hand-in-hand with it.
 
+### If it is helpful, here is the link to the T-Slot feature OnShape document: [T-Slot Link](https://cvilleschools.onshape.com/documents/5791a167e4b03c2aa6af3b35/w/8528f1c2d733302d4632f38e/e/7eab6eb8ff7dea85b9cc6a87)
+
 # The Problem And Goal 
 
 Dealing with hungry pets is frustrating. Whether it is the mournful meow of a cat, or the piercing puppy eyes of a 
@@ -107,4 +109,11 @@ Here is the link to the OnShape document:
 This OnShape document will contain the CAD for our project. 
 
 # Lessons Learned
-  Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everyhing with the standard servo arm and base instead of the microservo arm and base.
+
+* Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everything with the standard servo arm and base instead of the micro servo arm and base.
+
+* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
+ 
+* "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being unnecessarily used up. 
+
+* Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
