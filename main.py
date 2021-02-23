@@ -1,4 +1,4 @@
-# This file will be used for adding on RGB code to the LCD code.
+# This file will be used for making LCD code.
 
 import time
 import board
@@ -6,7 +6,6 @@ import pulseio
 from adafruit_motor import servo
 from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
 from lcd.lcd import LCD
-
 
 # time.monotonic() will be tried in place of time.time().
 # time.monotonic() is a float, whereas time.time() is an integer,
@@ -47,18 +46,23 @@ lcd = LCD(I2CPCF8574Interface(device_address), num_rows=2, num_cols=16)
 
 # -------------- LCD Setup End  --------------
 
-# Create PWMOut objects on pins A2 and A4.
-pwm_1 = pulseio.PWMOut(board.A2, frequency=50)
-pwm_2 = pulseio.PWMOut(board.A4, frequency=50)
+# --Test----------
 
-# Create servo objects from those PWMOut objects.
-servo_1 = servo.ContinuousServo(pwm_1)
-servo_2 = servo.ContinuousServo(pwm_2)
+print("Test")
+
+pwm = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+my_servo = servo.Servo(pwm)
 
 Servo_Wait_Time = 10. + time.monotonic()
 Print_Time = 2. + time.monotonic()
 Message_Time = True
+
 # It is better for Message_Time to be a boolean data value than a 0 or 1.
+
+# Digital IO pins that work with PWM: 1, 2, 3, 4, 5, 7, 9, 11, 12, and 13.
+# Not 0, 6, 8, and 10.
+
+my_servo.angle = 0
 
 while True:
 
@@ -73,17 +77,6 @@ while True:
             lcd.print(str(round(Remaining_Servo_Wait)))
             Print_Time = time.monotonic() + 2.
 
-    # Note - The original code for turning the servos (unrevised):
-
-    # if Remaining_Servo_Time <= 0:  # (==) does not work.
-    #   print("Servos are turning.")
-    #   servo_1.throttle = 0.1
-    #   servo_2.throttle = -0.1
-    #   time.sleep(1)
-    #   servo_1.throttle = 0.
-    #   servo_2.throttle = -0.
-    #   Servo_Wait_Time = time.time() + 10
-
     # Note - The revised code for turning the servos. It uses two if statements two set a time duration for the
     # servos to turn. It was chosen because a time.sleep() command makes it so that the code basically does nothing
     # for one second, whereas the revised code allows for other actions to happen.
@@ -97,18 +90,15 @@ while True:
             # if not Message_Time would be used.
             print("The servos are turning.")
             lcd.print("Turn \n")
-            lcd.print("Servos")
+            lcd.print("Servo")
             Message_Time = False
 
         if not Message_Time:
-            servo_1.throttle = 0.1
-            servo_2.throttle = -0.1
-            # The servos will be facing each other. For them to turn the food wheel in one direction, they
-            # must turn opposite directions.
+            my_servo.angle = 50
+            time.sleep(0.05)
 
     if Remaining_Servo_Wait <= -3.:
-        servo_1.throttle = 0.
-        servo_2.throttle = -0.
+        my_servo.angle = 0
         Message_Time = True
         Servo_Wait_Time = time.monotonic() + 10.
         Print_Time = time.monotonic() + 2.
