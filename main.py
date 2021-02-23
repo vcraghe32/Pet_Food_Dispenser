@@ -1,4 +1,5 @@
-# This file will be used for making LCD code.
+# This file is for micro servo code. The beginning code used a continuous rotation servo,
+# but the project plan has switched to using a micro servo because micro servos are more precise.
 
 import time
 import board
@@ -46,9 +47,7 @@ lcd = LCD(I2CPCF8574Interface(device_address), num_rows=2, num_cols=16)
 
 # -------------- LCD Setup End  --------------
 
-# --Test----------
-
-print("Test")
+print("Starting Code...")
 
 pwm = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
 my_servo = servo.Servo(pwm)
@@ -62,6 +61,7 @@ Message_Time = True
 # Digital IO pins that work with PWM: 1, 2, 3, 4, 5, 7, 9, 11, 12, and 13.
 # Not 0, 6, 8, and 10.
 
+# Set the servo angle to a starting position.
 my_servo.angle = 0
 
 while True:
