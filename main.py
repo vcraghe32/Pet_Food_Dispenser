@@ -69,23 +69,27 @@ activation_alarm = True
 # Set the servo angle to a starting position.
 
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
-distance = Sonar.distance
+
 
 print("Starting Code...")
 
 while True:
 
+    distance = sonar.distance
+    # This must be in the while True loop.
+
     if distance <= 12.5 and activation_alarm:
         wait = 5. + time.monotonic()
         lcd.clear()
         lcd.print("Servo Forward")
+        print("Servo forward")
         my_servo.angle = 90
 
         if wait - time.monotonic() <= 0.:
             lcd.clear()
             lcd.print("Servo Forward")
             my_servo.angle = 0
-            alarm = False
+            activation_alarm = False
 
     if not activation_alarm:
         alarm_wait = 20. + time.monotonic()
