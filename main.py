@@ -23,93 +23,118 @@ import adafruit_hcsr04
 # There is the FITEC FS90R continuous rotation servo (from the Engineering III box) and the FEETECH FT90R continuous
 # rotation servo (from the Dr. Shields' summer camp).
 
-TRIGGER_DISTANCE = 12.5   # constants are usually UPPER CASE by convention.
-CYCLE_TIME = 5.  # in seconds
-TIME_BTW_FEEDS = 20.
-LCD_REFRESH_TIMER = 1.
-OPEN_ANGLE = 90.
-CLOSED_ANGLE = 0.
+# constants are usually UPPER CASE by convention.
+TRIGGER_DISTANCE = 12.5
+CYCLE_TIME = 5.0  # in seconds
+TIME_BTW_FEEDS = 20.0
+LCD_REFRESH_TIMER = 1.0
+OPEN_ANGLE = 90.0
+CLOSED_ANGLE = 0.0
+
+# This code defines functions that are modular and reusable in future projects.
+
+# Function to initialize the lcd driver. We hand the function an object of 'board' and it returns
+# an object for the lcd that is used in the main code.
+# This function could be used in any other project.
+def initialize_lcd(board, rows=2, columns=16):
+
+    print("Initializing LCD")
+    i2c = board.I2C()
+    i2c.unlock()  # In case it was the i2c was just used, it needs to be unlocked.
+
+    device_address = None
+
+    while not i2c.try_lock():
+        pass  # this continues to try that command to obtain access to the i2c device, and when the device answers,
+        # the i2c.try_lock() function returns True and execution can continue below.
+
+    try:
+        while not device_address:
+            device_address_list = i2c.scan()
+            # The i2c.scan() returns a LIST of addresses.
+            # I just want the first address. So:
+            device_address = device_address_list[0]
+            print("I2C interface found at: ", hex(device_address))
+            time.sleep(2)
+
+    finally:
+        i2c.unlock()
+        i2c.deinit()
+        # This releases the SCL (Serial Clock Wire) pin so that the LCD can use it.
+        # I found that here:
+        # https://circuitpython.readthedocs.io/en/5.3.x/shared-bindings/busio/I2C.html#busio.I2C
+
+    # OK, now talk to the LCD at the address we just found by scanning.
+    lcd = LCD(I2CPCF8574Interface(device_address), num_rows=rows, num_cols=columns)
+
+    return lcd
 
 
-# -------------- LCD Setup Start  --------------
+def feed_cycle(duration, open_angle, closed_angle, lcd):
 
-i2c = board.I2C()
-i2c.unlock()  # In case it was the i2c was just used, it needs to be unlocked.
+    # time_to_return = time.monotonic() + duration
+    print("Activating feed cycle")
+    lcd.clear()
+    lcd.print("Servo\nForward")
+    print("Servo forward")
+    my_servo.angle = open_angle
+    time.sleep(duration)
+    lcd.clear()
+    lcd.print("Servo\nBackward")
+    print("Servo backward")
+    my_servo.angle = closed_angle
 
-device_address = None
+    return time.monotonic()  # as a return value, we hand back the time of the last feed cycle
 
-while not i2c.try_lock():
-    pass    # this continues to try that command to obtain access to the i2c device, and when the device answers,
-            # the i2c.try_lock() function returns True and execution can continue below.
 
-try:
-    while not device_address:
-        device_address_list = i2c.scan()
-        # The i2c.scan() returns a LIST of addresses.
-        # I just want the first address. So:
-        device_address = device_address_list[0]
-        print("I2C interface found at: ", hex(device_address))
-        time.sleep(2)
-
-finally:
-    i2c.unlock()
-    i2c.deinit()
-    # This releases the SCL (Serial Clock Wire) pin so that the LCD can use it.
-    # I found that here:
-    # https://circuitpython.readthedocs.io/en/5.3.x/shared-bindings/busio/I2C.html#busio.I2C
-
-# OK, now talk to the LCD at the address we just found by scanning.
-lcd = LCD(I2CPCF8574Interface(device_address), num_rows=2, num_cols=16)
-# -------------- End of LCD Setup  --------------
-
+#  Initialize devices
+lcd = initialize_lcd(
+    board
+)  # This is how to call the function that initializes the lcd.
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
-
-pwm = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+my_servo = servo.Servo(pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50))
 # Digital IO pins that work with PWM: 1, 2, 3, 4, 5, 7, 9, 11, 12, and 13.
 # Not 0, 6, 8, and 10.
 
 # Set the servo angle to a starting position
-my_servo = servo.Servo(pwm)
 my_servo.angle = CLOSED_ANGLE
 
 # Side note on Pycharm shortcuts: refactor (for renaming a variable) is shift-F6
 print("Starting Main Loop...")
-
-activation_timer = True
-feed_complete = False
+ready_to_feed = True
+print_time = time.monotonic()
+last_feed_time = time.monotonic()
 
 while True:
+    time_remaining = last_feed_time + TIME_BTW_FEEDS - time.monotonic()
+    ready_to_feed = time_remaining < 0.0
 
-    distance = sonar.distance
-    # Continuously read distance every time loop executes.
+    # get distance from ultrasound sensor
+    try:
+        distance = (
+            sonar.distance
+        )  # Continuously read distance every time loop executes.
+    except RuntimeError:
+        distance = (
+            TRIGGER_DISTANCE + 1.0
+        )  # This ensures that we have a value for distance if the sensor throws error.
+        print("Error - object too close to the ultrasound sensor")
 
-    if distance <= TRIGGER_DISTANCE and activation_timer:
-        feed_complete = False
-        time_to_return = time.monotonic() + CYCLE_TIME
-        print("Activating feed cycle")
+    if distance <= TRIGGER_DISTANCE and ready_to_feed:  # feed now
+        last_feed_time = feed_cycle(
+            duration=CYCLE_TIME,
+            open_angle=OPEN_ANGLE,
+            closed_angle=CLOSED_ANGLE,
+            lcd=lcd,
+        )
+
+    if print_time - time.monotonic() <= 0.0:  # print an update of status every few seconds
         lcd.clear()
-        lcd.print("Servo Forward")
-        print("Servo forward")
-        my_servo.angle = OPEN_ANGLE
-        activation_timer = False
-
-        if time_to_return - time.monotonic() <= 0.:
-            lcd.clear()
-            lcd.print("Servo Backward")
-            my_servo.angle = CLOSED_ANGLE
-            alarm_wait = time.monotonic() + TIME_BTW_FEEDS
-            feed_complete = True
-
-    if feed_complete:
-        print_time = time.monotonic() + LCD_REFRESH_TIMER
-
-
-        if print_time - time.monotonic() <= 0.:
-            lcd.clear()
-            print("Time Left" + str(round(alarm_wait - time.monotonic())))
+        if time_remaining > 0.0:
+            print("Time left: " + str(round(time_remaining)) + ". Closest object: " + str(distance))
             lcd.print("Ready in: \n")
-            lcd.print(str(round(alarm_wait - time.monotonic())))
-            print_time = time.monotonic() + 2.
-
-        if alarm_wait <= 0.:
-            alarm = True
+            lcd.print(str(round(time_remaining)))
+        else:
+            print("Ready to feed when distance sensor is triggered. Closest object: " + str(distance))
+            lcd.print("Ready\nto feed")
+        print_time = LCD_REFRESH_TIMER + time.monotonic()  # next print time
