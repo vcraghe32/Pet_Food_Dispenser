@@ -10,9 +10,9 @@ from lcd.lcd import LCD
 import adafruit_hcsr04
 
 # Currently, adafruit_hcsr04 is a python (.py) file and goes beyond the capacity for storage.
-# It must be made into a micropython (.mpy) file to clear up data.
+# It must be compiled into a micropython (.mpy) file to be more compact.
 
-# The link to adafruit_hcsr04:
+# The link to adafruit_hcsr04.py source code:
 # https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py
 
 # time.monotonic() will be tried in place of time.time().
@@ -23,6 +23,14 @@ import adafruit_hcsr04
 # There is the FITEC FS90R continuous rotation servo (from the Engineering III box) and the FEETECH FT90R continuous
 # rotation servo (from the Dr. Shields' summer camp).
 
+TRIGGER_DISTANCE = 12.5   # constants are usually UPPER CASE by convention.
+CYCLE_TIME = 5.  # in seconds
+TIME_BTW_FEEDS = 20.
+LCD_REFRESH_TIMER = 1.
+OPEN_ANGLE = 90.
+CLOSED_ANGLE = 0.
+
+
 # -------------- LCD Setup Start  --------------
 
 i2c = board.I2C()
@@ -31,7 +39,8 @@ i2c.unlock()  # In case it was the i2c was just used, it needs to be unlocked.
 device_address = None
 
 while not i2c.try_lock():
-    pass  # I do not know how to explain this.
+    pass    # this continues to try that command to obtain access to the i2c device, and when the device answers,
+            # the i2c.try_lock() function returns True and execution can continue below.
 
 try:
     while not device_address:
@@ -51,49 +60,49 @@ finally:
 
 # OK, now talk to the LCD at the address we just found by scanning.
 lcd = LCD(I2CPCF8574Interface(device_address), num_rows=2, num_cols=16)
-
-# -------------- LCD Setup End  --------------
-
-pwm = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
-
-my_servo = servo.Servo(pwm)
-my_servo.angle = 0
-
-activation_alarm = True
-
-# It is better for alarm to be a boolean data value than a 0 or 1.
-
-# Digital IO pins that work with PWM: 1, 2, 3, 4, 5, 7, 9, 11, 12, and 13.
-# Not 0, 6, 8, and 10.
-
-# Set the servo angle to a starting position.
+# -------------- End of LCD Setup  --------------
 
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
 
+pwm = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+# Digital IO pins that work with PWM: 1, 2, 3, 4, 5, 7, 9, 11, 12, and 13.
+# Not 0, 6, 8, and 10.
 
-print("Starting Code...")
+# Set the servo angle to a starting position
+my_servo = servo.Servo(pwm)
+my_servo.angle = CLOSED_ANGLE
+
+# Side note on Pycharm shortcuts: refactor (for renaming a variable) is shift-F6
+print("Starting Main Loop...")
+
+activation_timer = True
+feed_complete = False
 
 while True:
 
     distance = sonar.distance
-    # This must be in the while True loop.
+    # Continuously read distance every time loop executes.
 
-    if distance <= 12.5 and activation_alarm:
-        wait = 5. + time.monotonic()
+    if distance <= TRIGGER_DISTANCE and activation_timer:
+        feed_complete = False
+        time_to_return = time.monotonic() + CYCLE_TIME
+        print("Activating feed cycle")
         lcd.clear()
         lcd.print("Servo Forward")
         print("Servo forward")
-        my_servo.angle = 90
+        my_servo.angle = OPEN_ANGLE
+        activation_timer = False
 
-        if wait - time.monotonic() <= 0.:
+        if time_to_return - time.monotonic() <= 0.:
             lcd.clear()
-            lcd.print("Servo Forward")
-            my_servo.angle = 0
-            activation_alarm = False
+            lcd.print("Servo Backward")
+            my_servo.angle = CLOSED_ANGLE
+            alarm_wait = time.monotonic() + TIME_BTW_FEEDS
+            feed_complete = True
 
-    if not activation_alarm:
-        alarm_wait = 20. + time.monotonic()
-        print_time = 2. + time.monotonic()
+    if feed_complete:
+        print_time = time.monotonic() + LCD_REFRESH_TIMER
+
 
         if print_time - time.monotonic() <= 0.:
             lcd.clear()
