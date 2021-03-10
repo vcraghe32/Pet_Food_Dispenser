@@ -92,6 +92,7 @@ def feed_cycle(duration, open_angle, closed_angle, lcd):
     lcd.print("Servo\nBackward")
     print("Servo backward")
     my_servo.angle = closed_angle
+    time.sleep(2)
 
     return time.monotonic()  # as a return value, we hand back the time of the last feed cycle
 
