@@ -3,6 +3,7 @@
 
 **Note** - For more information about this project, please feel free to visit our [project GoogleDoc](https://docs.google.com/document/d/1ZKXdEp18WFhlqO-TDtYp-zZMlVuGLO5934JrBp6huCs/edit?usp=sharing). The project GoogleDoc contains inventory, idea brainstorms, schedule, cute pet pictures, and initial project ideas.
 [project Whiteboard](https://www.whiteboard.chat/board/98881ae5-cb39-46fe-b3e7-05e48ab4fd4d-pgNum-1).
+
 # Overview
 After completing the basic OnShape and CircuitPython assignments, the next assignment was the first Engineering III 
 project. The project did not have many constraints. Its main goal was to be a challenging project. No specific task was 
@@ -110,10 +111,14 @@ This OnShape document will contain the CAD for our project.
 
 # Lessons Learned
 
+## OnShape Lessons - Violet
+
 * Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everything with the standard servo arm and base instead of the micro servo arm and base.
 
-* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
- 
+* Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
+
 * "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being unnecessarily used up. 
 
-* Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
+* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
+
+# Coding/CircuitPython Lessons - Luke
