@@ -109,16 +109,22 @@ Here is the link to the OnShape document:
 
 This OnShape document will contain the CAD for our project. 
 
+## Prototype 
+
 # Lessons Learned
 
 ## OnShape Lessons - Violet
 
+* USE PART STUDIOS AS MUCH AS POSSIBLE AND T-SLOT FUNCTION!!! Saves so much time.
+
 * Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everything with the standard servo arm and base instead of the micro servo arm and base.
 
-* Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
+* Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design. Naming versions, for example Funnel_Slide_v2, can help when changing parts as well.
 
 * "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being unnecessarily used up. 
 
-* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
+* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing. 
+
+
 
 # Coding/CircuitPython Lessons - Luke
