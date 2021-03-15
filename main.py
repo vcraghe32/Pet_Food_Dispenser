@@ -18,7 +18,7 @@ import adafruit_hcsr04
 # The link to adafruit_hcsr04.py source code:
 # https://github.com/adafruit/Adafruit_CircuitPython_HCSR04/blob/master/adafruit_hcsr04.py
 
-# By convention, constant variables, meaining variables that are set to numbers that do not change,
+# By convention, constant variables, meaning variables that are set to numbers that do not change,
 # are usually UPPER CASE.
 
 TRIGGER_DISTANCE = 12.5
@@ -33,7 +33,7 @@ CLOSED_ANGLE = 0.0
 
 # This code is unique from previous Engineering III coding assignments in that it uses functions that are defined in
 # the main.py file. Functions are a very useful way to organize code into a series of manageable groups. They make
-# code easier to understand by seperating certain tasks. Each function should be designated to a specific task,
+# code easier to understand by separating certain tasks. Each function should be designated to a specific task,
 # such as initializing the LCD or moving a servo.
 
 # Also, functions are reusable in other code files. They can be copied and pasted or called using
@@ -94,7 +94,7 @@ def feed_cycle(duration, open_angle, closed_angle, lcd):
     my_servo.angle = closed_angle
     time.sleep(2)
 
-    return time.monotonic()  # as a return value, we hand back the time of the last feed cycle
+    return time.monotonic()  # As a return value, the time of the last feed cycle is handed back.
 
 
 # Okay, the functions have been defined. Now, similar to how to an object is created from a library, objects will be
@@ -127,22 +127,30 @@ last_feed_time = time.monotonic()
 
 while True:
     time_remaining = last_feed_time + TIME_BTW_FEEDS - time.monotonic()
+
     ready_to_feed = time_remaining < 0.0
 
-    # Get the distance from ultrasound sensor. This could be made into a function.
+    # The code below gets the distance from the ultrasound sensor. This could be made into a function.
     try:
         distance = (
             sonar.distance
-        )  # Continuously read distance every time loop executes.
+        )  # This continuously reads the distance measured every time the loop executes.
+
     except RuntimeError:
         distance = (
                 TRIGGER_DISTANCE + 1.0
-        )  # This ensures that we have a value for distance if the sensor throws error.
+        )
+
+        # This code is very useful, as, without it, the code enters a blocked state with a RuntimeError when the
+        # ultrasonic distance reads something too close. By setting the distance to 1 more than the triggering distance
+        # when there is a RuntimeError, the distance will be converted into a "safe" value that will not trigger an
+        # error nor activate the code.
+
         print("Error - object too close to the ultrasound sensor")
 
     if distance <= TRIGGER_DISTANCE and ready_to_feed:
         # Note that the boolean (ready_to_feed) is set to true because, sensibly enough, it means that the code is ready
-        # to feed. If it was actrivated by (not read_to_feed), that would be confusing.
+        # to feed. If it was activated by a variable called "not read_to_feed," that would be confusing.
 
         last_feed_time = feed_cycle(
             duration=CYCLE_TIME,
@@ -152,15 +160,18 @@ while True:
         )
 
         # The things on the left side of the equals signs are the arguments mentioned in the function.
-        # THe things on the right side of the equals signs are the constants that the arguments are set eqaul to.
+        # The things on the right side of the equals signs are the constants that the arguments are set equal to.
 
-    if print_time - time.monotonic() <= 0.0:  # print an update of status every few seconds
+    if print_time - time.monotonic() <= 0.0:  # This prints an update of the timer status every few seconds.
         lcd.clear()
+
         if time_remaining > 0.0:
             print("Time left: " + str(round(time_remaining)) + ". Closest object: " + str(distance))
             lcd.print("Ready in: \n")
             lcd.print(str(round(time_remaining)))
+
         else:
             print("Ready to feed when distance sensor is triggered. Closest object: " + str(distance))
             lcd.print("Ready\nto feed")
-        print_time = LCD_REFRESH_TIMER + time.monotonic()  # next print time
+
+        print_time = LCD_REFRESH_TIMER + time.monotonic()  # This is the next print time.
