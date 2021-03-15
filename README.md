@@ -146,11 +146,14 @@ This OnShape document will contain the CAD for our project.
   functions/classes that a library uses.
   
 * When thinking of a function, it is helpful to compare it to an algebraic equation with an input (x) and output (y).
-  More information coming soon...
+
+* By convention, constant variables, meaning variables that are set to numbers that do not change, are usually UPPER CASE.
+  Using constant variables helps to assign meaning to different values, making the code easier to understand. For example,
+  setting the constant variable `CLOSED POSITION` equal to `my_servo.angle`.
 
 # Circuit Diagram
 
 * Here is the wiring diagram, though the LCD is in need of an i2c backpack, which does not appear to be on TinkerCad:
-![Pet Food Dispenser Circuit Diagram]((./Engineering_III-Pet_Food_Dispenser_Circuit_Diagram.png))
+![Pet Food Dispenser Circuit Diagram](./Engineering_III-Pet_Food_Dispenser_Circuit_Diagram.png)
 
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
