@@ -109,6 +109,8 @@ Here is the link to the OnShape document:
 
 This OnShape document will contain the CAD for our project. 
 
+## Prototype Documentation
+
 # Lessons Learned
 
 ## OnShape Lessons - Violet
