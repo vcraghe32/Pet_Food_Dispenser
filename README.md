@@ -113,12 +113,42 @@ This OnShape document will contain the CAD for our project.
 
 ## OnShape Lessons - Violet
 
-* Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of assembling everything with the standard servo arm and base instead of the micro servo arm and base.
+* Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of 
+  assembling everything with the standard servo arm and base instead of the micro servo arm and base.
 
 * Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
 
-* "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being unnecessarily used up. 
+* "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being 
+  unnecessarily used up. 
 
-* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
+* In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to 
+  stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
 
-# Coding/CircuitPython Lessons - Luke
+
+## Coding/CircuitPython Lessons - Luke
+
+* For versioning code - documenting the stages of a code's development - it is unnecessary to create separate code files. 
+  What had originally been done was creating a code file such as `core_code.py`, then saving a new file as 
+  `continuous_lcd_addition.py`. Instead, using Git Commits is much easier and better. 
+  
+* Using Git Commits instead of separate saved files makes the project files seem more organized, allows for a history to 
+  be created for one single file that can then be looked at and reverted to, and is relatively straightforward. 
+  
+* A general rule of thumb: commit and push whenever leaving the computer or at a milestone. Then, adding a message 
+  such as "created function for servo turning mechanism" serves to document the changes made - it will be useful when looking back.
+
+* The code comments explain most of how the code works. Here is the code: [main.py](./main.py)
+
+* This coding assignment was unique in that functions were established inside the `main.py` to organize separate tasks
+  that the code performed. For further information, please look at the code comments. Basically, the code used the 
+  functions/classes that a library uses.
+  
+* When thinking of a function, it is helpful to compare it to an algebraic equation with an input (x) and output (y).
+  More information coming soon...
+
+# Circuit Diagram
+
+* Here is the wiring diagram, though the LCD is in need of an i2c backpack, which does not appear to be on TinkerCad:
+![Pet Food Dispenser Circuit Diagram]((./Engineering_III-Pet_Food_Dispenser_Circuit_Diagram.png))
+
+#### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
