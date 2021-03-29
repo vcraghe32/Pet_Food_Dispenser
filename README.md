@@ -126,6 +126,8 @@ This OnShape document will contain the CAD for our project.
 * In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to 
   stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
 
+* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. 
+
 
 ## Coding/CircuitPython Lessons - Luke
 
