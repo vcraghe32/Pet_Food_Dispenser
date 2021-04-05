@@ -27,6 +27,7 @@ TIME_BTW_FEEDS = 20.0
 LCD_REFRESH_TIMER = 1.0
 OPEN_ANGLE = 90.0
 CLOSED_ANGLE = 0.0
+NUMBER_OF_CYCLES = 2
 
 # A period is listed after the constant variables because they will be coupled with the time.monotonic() library, which
 # is a floating point number data type.
@@ -196,12 +197,20 @@ while True:
         # The things on the left side of the equals signs are the variable names used in the function's arguments list.
         # The things on the right side of the equals signs are the constants that the arguments are set equal to.
 
-        last_feed_time = feed_cycle(
-            duration=CYCLE_TIME,
-            open_angle=OPEN_ANGLE,
-            closed_angle=CLOSED_ANGLE,
-            lcd=lcd,
-        )
+        # In the code below, the range() function is set up in order to allow the dispensing cycle to be repeated if
+        # necessary, in case more food must be dispensed when the pet food dispenser is activated. Also,
+        # "NUMBER_OF_CYCLES" is a a constant specified at the beginning of the code file, and "counter" is a filler
+        # variable that does not have to be set to a specific value.
+
+        for counter in range(NUMBER_OF_CYCLES):
+            last_feed_time = feed_cycle(
+                duration=CYCLE_TIME,
+                open_angle=OPEN_ANGLE,
+                closed_angle=CLOSED_ANGLE,
+                lcd=lcd,
+
+            )
+
         # The feed_cycle function could also have no return value and just be executed without assigning any values
         # to last_feed_time. If this were the case, the code would look like:
 
