@@ -156,6 +156,6 @@ This OnShape document will contain the CAD for our project.
 # Circuit Diagram
 
 * Here is the wiring diagram, though the LCD is in need of an i2c backpack, which does not appear to be on TinkerCad:
-![Pet Food Dispenser Circuit Diagram](./Engineering_III-Pet_Food_Dispenser_Circuit_Diagram.png)
+![Pet Food Dispenser Circuit Diagram](./Engineering_III-Pet_Food_Dispenser-Circuit_Diagram.png)
 
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
