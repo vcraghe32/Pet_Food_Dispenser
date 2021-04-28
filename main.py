@@ -23,11 +23,12 @@ import adafruit_hcsr04
 
 TRIGGER_DISTANCE = 12.5
 CYCLE_TIME = 5.0
-TIME_BTW_FEEDS = 20.0
+TIME_BTW_FEEDS = 6
 LCD_REFRESH_TIMER = 1.0
-OPEN_ANGLE = 90.0
-CLOSED_ANGLE = 0.0
-NUMBER_OF_CYCLES = 2
+OPEN_ANGLE = 45.
+CLOSED_ANGLE = 135.
+NUMBER_OF_CYCLES = 1
+
 
 # A period is listed after the constant variables because they will be coupled with the time.monotonic() library, which
 # is a floating point number data type.
@@ -46,7 +47,6 @@ NUMBER_OF_CYCLES = 2
 
 
 def initialize_lcd(board, rows=2, columns=16):
-
     # This function initializes the LCD.
 
     print("Initializing LCD")
@@ -165,7 +165,7 @@ while True:
         print("Error - object too close to the ultrasonic distance sensor")
 
     if (
-        print_time - time.monotonic() <= 0.0
+            print_time - time.monotonic() <= 0.0
     ):  # This prints an update of the timer status every few seconds.
         lcd.clear()
 
@@ -187,7 +187,7 @@ while True:
             lcd.print("Ready\nto feed")
 
         print_time = (
-            LCD_REFRESH_TIMER + time.monotonic()
+                LCD_REFRESH_TIMER + time.monotonic()
         )  # This is the next print time.
 
     if distance <= TRIGGER_DISTANCE and ready_to_feed:
