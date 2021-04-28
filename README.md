@@ -91,7 +91,7 @@ These are the measurements for the first(current) versions of our water wheel, h
 funnel design was difficult  to mate together in OnShape, so we decided to create a box with a  3D design insert that 
 would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
 
-# Schedule 
+# Schedule (all online school)
 
 | Date: | Goal: |
 | --- | --- |
@@ -100,7 +100,20 @@ would act as inclined planes around the hole of the box so that the food moves d
 | 2/10/21: | A rough draft of 3D design on OnShape. The funnel, wheel, and slide are assembled in a way that they would be able to work together. Additionally, a rough draft of the code. |
 | 2/17/21: | A revised draft of the 3D design on OnShape, as well as the code. |
 | 2/24/21: | Another revised 3D design on OnShape. Ideally, the this or the previous design can be tested in the Sigma Lab. If it does not work, then one final 3D design will be created. |
-| 3/1/21: | The final 3D design on OnShape. |
+| 3/1/21: | The final 3D prototype design on OnShape. |
+|Until in person time|Print out walls as much as possible, wait to recieve materials|
+
+# In-person scheduling (hybrid schedule)
+| Week of: | What we did: online, *in person*|
+| --- | --- |
+|4/12/21|Luke: *Cut holes in walls with an Exacto knife.*, On OnShape, cut holes for LCD, Ultrasonic sensor, LED, and switch into the right wall.|
+|4/12/21|Violet: *Laser-cut new walls and extended wires.* Create/Design Bottom and top walls - Metro MO Express cut.|
+|4/19/21|Luke: *Laser-cut walls.* Configure PyCharm (not a priority).
+|4/19/21|Violet: *Laser-cut walls.* Assemble the design, create hinge for top wall.|
+|4/26/21|Luke: *Trouble shoot code.* Figure out the right angle for dispensing.
+|4/26/21|Violet: *Planning and designing* Design holes for bottom wall, metro, and battery mounts.
+
+
 
 # OnShape Document:
 
