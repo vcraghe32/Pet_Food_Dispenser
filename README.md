@@ -134,12 +134,16 @@ This OnShape document will contain the CAD for our project.
 * Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
 
 * "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being 
-  unnecessarily used up. 
+  unnecessarily used up. We switched our design from a continuous rotation design(water wheel) to a 180 cup-filling design. It rquires alterations to the wheel, but the rest of the design remained the same.
 
 * In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to 
   stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
 
-* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. 
+* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. This is good time to document on github, and work on future design elements.  I worked on the outer walls, metro express nd battery holder holes, and the hinge design. 
+
+* Be sure to update your drawing on Onshape before lazer cutting - it's the orange circle button at the top left.
+
+* Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes for the servo screws to secure it in place. 
 
 
 ## Coding/CircuitPython Lessons - Luke
