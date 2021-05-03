@@ -128,6 +128,8 @@ This OnShape document will contain the CAD for our project.
 
 ## OnShape Lessons - Violet
 
+* Communitcating design ideas over zoom can be difficult, so we found that creating simple cardboard prototypes of our designs helped illustrate our ideas.
+
 * Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of 
   assembling everything with the standard servo arm and base instead of the micro servo arm and base.
 
