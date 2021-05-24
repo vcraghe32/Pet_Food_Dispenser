@@ -178,3 +178,9 @@ This OnShape document will contain the CAD for our project.
 ![Pet Food Dispenser Circuit Diagram](./Engineering_III-Pet_Food_Dispenser-Circuit_Diagram.png)
 
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
+
+# Final Product
+
+Work in progress...
+
+Possible GIF...
