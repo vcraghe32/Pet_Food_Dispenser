@@ -122,8 +122,6 @@ Here is the link to the OnShape document:
 
 This OnShape document will contain the CAD for our project. 
 
-## Prototype Documentation
-
 # Lessons Learned
 
 ## OnShape Lessons - Violet
@@ -146,7 +144,6 @@ This OnShape document will contain the CAD for our project.
 * Be sure to update your drawing on Onshape before lazer cutting - it's the orange circle button at the top left.
 
 * Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes for the servo screws to secure it in place. 
-
 
 ## Coding/CircuitPython Lessons - Luke
 
@@ -178,6 +175,11 @@ This OnShape document will contain the CAD for our project.
 ![Pet Food Dispenser Circuit Diagram](./Engineering_III-Pet_Food_Dispenser-Circuit_Diagram.png)
 
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
+
+# Pet Food Dispsner Briefing/Instructions
+
+* Here is a .PDF of the instructions and background of the pet food dispsner. The .PDF was printed out and taped onto the final product to provide information for possible viewers and users: 
+[Pet Food Dispenser Briefing](./Engineering_III-Pet_Food_Dispenser-Instructions.pdf)
 
 # Final Product
 
