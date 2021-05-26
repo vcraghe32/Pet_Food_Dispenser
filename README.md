@@ -118,13 +118,13 @@ would act as inclined planes around the hole of the box so that the food moves d
 |4/26/21|Violet: *Planning and designing* Design holes for bottom wall, metro, and battery mounts.
 
 
-
 # OnShape Document:
 
 Here is the link to the OnShape document: 
 [OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
 
 This OnShape document will contain the CAD for our project. 
+
 
 # Lessons Learned
 
@@ -145,7 +145,9 @@ This OnShape document will contain the CAD for our project.
 
 * Materials can take up to a month to obtain, so be sure to have other things to do while you wait. This is good time to document on github, and work on future design elements.  I worked on the outer walls, metro express nd battery holder holes, and the hinge design. 
 
-* Be sure to update your drawing on Onshape before lazer cutting - it's the orange circle button at the top left. We didn't update the sketch for oe of the servo walls and the back wall, so it didn't fit into the new version of the box. 
+* Be sure to update your drawing on Onshape before lazer cutting - it's the orange circle button at the top left. We didn't update the sketch for oe of the servo walls and the back wall, so it didn't fit into the new version of the box. There were several laser cut parts that did not work because of design errors. Here are some of them: 
+
+![Spare Servo Walls](./Media/Pet_Food_Dispenser-SpareServoWalls.jpg)
 
 * Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes for the servo screws to secure it in place. Thisis an image of all the servo walls we had to print out before finding the right fit. 
 
@@ -173,6 +175,7 @@ This OnShape document will contain the CAD for our project.
   Using constant variables helps to assign meaning to different values, making the code easier to understand. For example,
   setting the constant variable `CLOSED POSITION` equal to `my_servo.angle`.
 
+
 # Circuit Diagram
 
 * Here is the wiring diagram, though the LCD is in need of an i2c backpack, which does not appear to be on TinkerCad:
@@ -180,26 +183,31 @@ This OnShape document will contain the CAD for our project.
 
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
 
+
 # Pet Food Dispsner Briefing/Instructions
 
 * Here is a .PDF of the instructions and background of the pet food dispsner. The .PDF was printed out and taped onto the final product to provide information for possible viewers and users: 
 [Pet Food Dispenser Briefing](./Engineering_III-Pet_Food_Dispenser-Instructions.pdf)
+
 
 # Final Product
 
 Here are some images and a GIF of the final product. The GIF was taken from the project [OnShape Assembly.](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
 
 ### GIF
+
 ![Pet Food Dispenser Mechnism GIF](./Media/Pet_Food_Dispenser-Mechanism.gif)
 
 ### Final Pictures
 
-Pictures here...
-![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalFront.png)
-![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalIsometric.png)
-![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalRight.pdf)
-![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalBack.png)
-![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalLeft.png)
+![Front Picture](./Media/Pet_Food_Dispenser-FinalFront.jpg)
+
+![Back Picture](./Media/Pet_Food_Dispenser-FinalBack.jpg)
+
+![Left Picture](./Media/Pet_Food_Dispenser-FinalLeft.jpg)
+
+![Right Picture](./Media/Pet_Food_Dispenser-FinalRight.jpg)
+
 
 ### Final Note 
 Quite interestingly, it seems that dogs and cats are able to hear the frequencies emmited from the ultrasonic distance sensor. This is something that had not been considerd at the beginning of the project and is a good example of how unforseen variables can somethings appear as a project progresses. The project should be tested with each pet individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, this project can double-up as a candy despenser :) 
