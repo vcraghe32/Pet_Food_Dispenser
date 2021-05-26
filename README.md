@@ -189,4 +189,4 @@ This OnShape document will contain the CAD for our project.
 
 Work in progress...
 
-![Pet Food Dispenser Mechnism GIF](./Media/Pet_Food_Dispenser-Mechnism.gif)
+![Pet Food Dispenser Mechnism GIF](./Media/Pet_Food_Dispenser-Mechanism.gif)
