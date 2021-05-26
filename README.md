@@ -187,6 +187,14 @@ This OnShape document will contain the CAD for our project.
 
 # Final Product
 
-Work in progress...
+Here are some images and a GIF of the final product. The GIF was taken from the project [OnShape Assembly.](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
 
+### GIF
 ![Pet Food Dispenser Mechnism GIF](./Media/Pet_Food_Dispenser-Mechanism.gif)
+
+### Final Pictures
+
+Pictures here...
+
+### Final Note 
+Quite interestingly, it seems that dogs and cats are able to hear the frequencies emmited from the ultrasonic distance sensor. This is something that had not been considerd at the beginning of the project and is a good example of how unforseen variables can somethings appear as a project progresses. The project should be tested with each pet individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, this project can double-up as a candy despenser :) 
