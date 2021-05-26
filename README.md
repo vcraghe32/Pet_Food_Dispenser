@@ -118,13 +118,13 @@ would act as inclined planes around the hole of the box so that the food moves d
 |4/26/21|Violet: *Planning and designing* Design holes for bottom wall, metro, and battery mounts.
 
 
+
 # OnShape Document:
 
 Here is the link to the OnShape document: 
 [OnShape Document](https://cvilleschools.onshape.com/documents/015179800deb9471f00f5f8e/w/bea41924170b278a6561fb34/e/8fa549fe2ac3d84aadd2efb3)
 
 This OnShape document will contain the CAD for our project. 
-
 
 # Lessons Learned
 
@@ -173,7 +173,6 @@ This OnShape document will contain the CAD for our project.
   Using constant variables helps to assign meaning to different values, making the code easier to understand. For example,
   setting the constant variable `CLOSED POSITION` equal to `my_servo.angle`.
 
-
 # Circuit Diagram
 
 * Here is the wiring diagram, though the LCD is in need of an i2c backpack, which does not appear to be on TinkerCad:
@@ -181,12 +180,10 @@ This OnShape document will contain the CAD for our project.
 
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
 
-
 # Pet Food Dispsner Briefing/Instructions
 
 * Here is a .PDF of the instructions and background of the pet food dispsner. The .PDF was printed out and taped onto the final product to provide information for possible viewers and users: 
 [Pet Food Dispenser Briefing](./Engineering_III-Pet_Food_Dispenser-Instructions.pdf)
-
 
 # Final Product
 
@@ -197,14 +194,12 @@ Here are some images and a GIF of the final product. The GIF was taken from the 
 
 ### Final Pictures
 
-![Front Picture](./Media/Pet_Food_Dispenser-FinalFront.jpg)
-
-![Back Picture](./Media/Pet_Food_Dispenser-FinalBack.jpg)
-
-![Left Picture](./Media/Pet_Food_Dispenser-FinalLeft.jpg)
-
-![Right Picture](./Media/Pet_Food_Dispenser-FinalRight.jpg)
-
+Pictures here...
+![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalFront.png)
+![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalIsometric.png)
+![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalRight.pdf)
+![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalBack.png)
+![Pet Food Dispenser Final](./Engineering_III-Pet_Food_Dispenser-FinalLeft.png)
 
 ### Final Note 
 Quite interestingly, it seems that dogs and cats are able to hear the frequencies emmited from the ultrasonic distance sensor. This is something that had not been considerd at the beginning of the project and is a good example of how unforseen variables can somethings appear as a project progresses. The project should be tested with each pet individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, this project can double-up as a candy despenser :) 
