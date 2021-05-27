@@ -85,15 +85,15 @@ containers into the box, an inclined plane will bring the food down to the bowl.
 
 Our last design that we ended up using for our final project was a 180 servo design! This was because 180 servos have more strength and are easier to accurately position. The mechanism works by turning the cup to fill it up, dumping it down into the box, and then sliding the food down.
 
-## Design Versions 
+### Project Design and Measurements
 
-### Version 1
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Planning.JPG" width="400">
 
-These are the measurements for the first(current) versions of our water wheel, hinge 
-(for opening the battery holder/food container), and funnel walls. The water wheel design has worked so far, however the 
-funnel design was difficult  to mate together in OnShape, so we decided to create a box with a  3D design insert that 
+These are the measurements for the first (current) versions of our water wheel, hinge 
+(for opening the battery holder/food container), and funnel walls. The water wheel design worked; however the 
+funnel design was difficult to mate together in OnShape, so it was then decided to create a box with a 3D design insert that 
 would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
+
 
 # Schedule (all online school)
 
