@@ -9,17 +9,16 @@ project. The project did not have many constraints. Its main goal was to be a ch
 given, but the project had to make use of CircuitPython and CAD (Computer-Aided Design).
 
 For the first Engineering III project, we (Violet Craghead-Way and Luke Frank) decided to create a pet food dispenser. 
-Both having pets, a pet food dispenser sounded like an applicable and fun idea. There were not many constraints on 
-this project. The main constraint was that the project had to be a challenge.
-
+Both having pets, a pet food dispenser sounded like an applicable and fun idea. 
 The tools that were used for this project are as follows:
 
 * OnShape - OnShape was used for CAD. OnShape was helpful because it is a cloud-based program. 
   It automatically saves work to the cloud. Working on the cloud is a useful measure against data loss. 
   Unlike Solidworks, another CAD program, OnShape allows for collaboration at the same time.
 
-* PyCharm - PyCharm was used for CircuitPython. PyCharm is useful in that it is compatible with GitHub 
-  commits, pushes, and pulls. It also has spell checks, a built-in serial monitor, and can suggest code improvements.
+* PyCharm - PyCharm, an Integrated Development Environment (IDE), was used for CircuitPython. PyCharm is useful in that it is compatible with GitHub 
+  commits, pushes, and pulls. It creates links between sections of code and checks that functions are correctly called, that syntax is correct, etc. 
+  It also has spell checks, a built-in serial monitor, and can suggest code improvements.
 
 * Caret - Similar to PyCharm, Caret was used for CircuitPython. Note that **Caret is for Chromebook.** PyCharm operates 
   only on Macs and PCs. For Chromebooks, Caret is a useful piece of software for programming in CircuitPython. It does 
@@ -50,7 +49,7 @@ servo. Finally, the design included an inclined plane for the food to travel on 
 Archimedes screw. The inclined plane would lead to a pet food bowl or to space where the pet could eat the food.
 
 **Note - citation for the website where the image was taken from:** 
-Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
+Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, http://hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
 
 **EasyBib was used for generating the MLA citation.**
 
