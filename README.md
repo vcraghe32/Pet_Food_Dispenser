@@ -1,4 +1,3 @@
-
 # Pet Food Dispenser
 
 **Note** - For more information about this project, please feel free to visit our [project GoogleDoc](https://docs.google.com/document/d/1ZKXdEp18WFhlqO-TDtYp-zZMlVuGLO5934JrBp6huCs/edit?usp=sharing). The project GoogleDoc contains inventory, idea brainstorms, schedule, cute pet pictures, and initial project ideas.
@@ -30,13 +29,13 @@ The tools that were used for this project are as follows:
 
 # The Problem And Goal 
 
-Dealing with hungry pets is frustrating. Whether it is the mournful meow of a cat, or the piercing puppy eyes of a 
+Dealing with hungry pets is frustrating. Whether it is the mournful meow of a cat or the piercing puppy eyes of a 
 dog, hungry pets can be both distracting and irritating. We each have two pets 
 (a dog and cat for Luke and two dogs for Violet), so we understand the struggle.
 
-Luckily, with a pet food dispenser, meal time for pets can be made into a more entertaining and enjoyable experience. 
+Luckily, with a pet food dispenser, mealtime for pets can be made into a more entertaining and enjoyable experience. 
 Pets would no longer come pleading to humans for their food because their food source would be in one place. 
-Additionally, an automated pet food dispenser would give pets a concrete sense of a meal time schedule 
+Additionally, an automated pet food dispenser would give pets a concrete sense of a mealtime schedule 
 which would be hard to rival when done by humans. 
 
 # Brainstorm
@@ -48,7 +47,7 @@ The brainstorm began with the idea of an Archimedes screw. The basic components 
 rotated by a continuous rotation servo and a hole-shaped dispensing area for pouring the food into. 
 Additionally, the rate by which food was supplied to a pet would be determined by the speed of the continuous-rotation 
 servo. Finally, the design included an inclined plane for the food to travel on after being transported by the 
-Archimedes screw. The inclined plane would lead to a pet food bowl or to a space where the pet could eat the food.
+Archimedes screw. The inclined plane would lead to a pet food bowl or to space where the pet could eat the food.
 
 **Note - citation for the website where the image was taken from:** 
 Kristina Panos, et al. “Dual Pet Food Dispenser Is Doubly Convenient.” Hackaday, 31 May 2015, hackaday.com/2015/05/31/dual-pet-food-dispenser-is-doubly-convenient/. 
@@ -73,8 +72,8 @@ the design seemed flawed, so we brainstormed again.
 ### Water Wheel
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Brainstorm.JPG" width="450">
 
-Our second to last brainstorm idea that we will be using is a water-wheel like design that will dispense pet food pellets 
-instead of water. The food flows into the small containers inside the food wheel, and then moves in a circular motion. 
+Our second to last brainstorm idea that we will be using is a water-wheel-like design that will dispense pet food pellets 
+instead of water. The food flows into the small containers inside the food wheel and then moves in a circular motion. 
 The pull of gravity and the push of a continuous rotation servo turn the continuous rotation servo, and the food pellets 
 drop when the container faces downwards. The food is contained by rubber hinge flaps while it is being filled up to keep 
 the small containers in the food wheel closed. When the wheel does a complete rotation a certain quantity of food is 
@@ -83,14 +82,14 @@ containers into the box, an inclined plane will bring the food down to the bowl.
 
 ### 180 servo- Final approach
 
-Our last design that we ended up using for our final project was a 180 servo design! This was because 180 servos have more strength and are easier to accurately position. The mechanism works by turning the cup to fill it up, dumping it down into the box, and then sliding the food down.
+The last design that we ended up using for our final project was a 180 servo design! This was because 180 servos have more strength and are easier to accurately position. The mechanism works by turning the cup to fill it up, dumping it down into the box, and then sliding the food down.
 
 ### Project Design and Measurements
 
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Planning.JPG" width="400">
 
 These are the measurements for the first (current) versions of our water wheel, hinge 
-(for opening the battery holder/food container), and funnel walls. The water wheel design worked; however the 
+(for opening the battery holder/food container), and funnel walls. The water wheel design worked; however, the 
 funnel design was difficult to mate together in OnShape, so it was then decided to create a box with a 3D design insert that 
 would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
 
@@ -103,9 +102,9 @@ would act as inclined planes around the hole of the box so that the food moves d
 | 1/27/21 | A draft of what the 3D design will be. It does not have to be created in OnShape, but there should be a plan for how the design will be made. |
 | 2/10/21: | A rough draft of 3D design on OnShape. The funnel, wheel, and slide are assembled in a way that they would be able to work together. Additionally, a rough draft of the code. |
 | 2/17/21: | A revised draft of the 3D design on OnShape, as well as the code. |
-| 2/24/21: | Another revised 3D design on OnShape. Ideally, the this or the previous design can be tested in the Sigma Lab. If it does not work, then one final 3D design will be created. |
+| 2/24/21: | Another revised 3D design on OnShape. Ideally, this or the previous design can be tested in the Sigma Lab. If it does not work, then one final 3D design will be created. |
 | 3/1/21: | The final 3D prototype design on OnShape. |
-|Until in person time|Print out walls as much as possible, wait to recieve materials|
+|Until in-person time|Print out walls as much as possible, wait to receive materials|
 
 # In-person scheduling (hybrid schedule)
 | Week of: | What we did: online, *in person*|
@@ -114,7 +113,7 @@ would act as inclined planes around the hole of the box so that the food moves d
 |4/12/21|Violet: *Laser-cut new walls and extended wires.* Create/Design Bottom and top walls - Metro MO Express cut.|
 |4/19/21|Luke: *Laser-cut walls.* Configure PyCharm (not a priority).
 |4/19/21|Violet: *Laser-cut walls.* Assemble the design, create hinge for top wall.|
-|4/26/21|Luke: *Trouble shoot code.* Figure out the right angle for dispensing.
+|4/26/21|Luke: *Troubleshoot code.* Figure out the right angle for dispensing.
 |4/26/21|Violet: *Planning and designing* Design holes for bottom wall, metro, and battery mounts.
 
 
@@ -130,7 +129,7 @@ This OnShape document will contain the CAD for our project.
 
 ## OnShape Lessons - Violet
 
-* Communitcating design ideas over zoom can be difficult, so we found that creating simple cardboard prototypes of our designs helped illustrate our ideas, in addition to using the whiteboard website and sharing our screens. 
+* Communicating design ideas over zoom can be difficult, so we found that creating simple cardboard prototypes of our designs helped illustrate our ideas, in addition to using the whiteboard website and sharing our screens. 
 
 * Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of 
   assembling everything with the standard servo arm and base instead of the micro servo arm and base.
@@ -143,13 +142,13 @@ This OnShape document will contain the CAD for our project.
 * In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to 
   stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
 
-* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. This is good time to document on github, and work on future design elements.  I worked on the outer walls, metro express nd battery holder holes, and the hinge design. 
+* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. This is a good time to document on GitHub and work on future design elements. I worked on the outer walls, metro express and battery holder holes, and the hinge design. 
 
-* Be sure to update your drawing on Onshape before lazer cutting - it's the orange circle button at the top left. We didn't update the sketch for oe of the servo walls and the back wall, so it didn't fit into the new version of the box. There were several laser cut parts that did not work because of design errors. Here are some of them: 
+* Be sure to update your drawing on Onshape before laser cutting - it's the orange circle button at the top left. We didn't update the sketch for one of the servo walls and the back wall, so it didn't fit into the new version of the box. There were several laser-cut parts that did not work because of design errors. Here are some of them: 
 
 ![Spare Servo Walls](./Media/Pet_Food_Dispenser-SpareServoWalls.jpg)
 
-* Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes for the servo screws to secure it in place. Thisis an image of all the servo walls we had to print out before finding the right fit. 
+* Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes for the servo screws to secure it in place. This is an image of all the servo walls we had to print out before finding the right fit. 
 
 ## Coding/CircuitPython Lessons - Luke
 
@@ -181,12 +180,12 @@ This OnShape document will contain the CAD for our project.
 * Here is the wiring diagram, though the LCD is in need of an i2c backpack, which does not appear to be on TinkerCad:
 ![Pet Food Dispenser Circuit Diagram](./Engineering_III-Pet_Food_Dispenser-Circuit_Diagram.png)
 
-#### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option.The circuit diagram might be changed another time if a better circuit diagram creator if found.
+#### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option. The circuit diagram might be changed another time if a better circuit diagram creator is found.
 
 
 # Pet Food Dispsner Briefing/Instructions
 
-* Here is a .PDF of the instructions and background of the pet food dispsner. The .PDF was printed out and taped onto the final product to provide information for possible viewers and users: 
+* Here is a .PDF of the instructions and background of the pet food dispenser. The .PDF was printed out and taped onto the final product to provide information for possible viewers and users: 
 [Pet Food Dispenser Briefing](./Engineering_III-Pet_Food_Dispenser-Instructions.pdf)
 
 
@@ -196,7 +195,7 @@ Here are some images and a GIF of the final product. The GIF was taken from the 
 
 ### GIF
 
-![Pet Food Dispenser Mechnism GIF](./Media/Pet_Food_Dispenser-Mechanism.gif)
+![Pet Food Dispenser Mechanism GIF](./Media/Pet_Food_Dispenser-Mechanism.gif)
 
 ### Final Pictures
 
@@ -210,4 +209,4 @@ Here are some images and a GIF of the final product. The GIF was taken from the 
 
 
 ### Final Note 
-Quite interestingly, it seems that dogs and cats are able to hear the frequencies emmited from the ultrasonic distance sensor. This is something that had not been considerd at the beginning of the project and is a good example of how unforseen variables can somethings appear as a project progresses. The project should be tested with each pet individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, this project can double-up as a candy despenser :) 
+Quite interestingly, it seems that dogs and cats are able to hear the frequencies emitted from the ultrasonic distance sensor. This is something that had not been considered at the beginning of the project and is a good example of how unforeseen variables can somethings appear as a project progresses. The project should be tested with each pet individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, this project can double-up as a candy dispenser :) 
