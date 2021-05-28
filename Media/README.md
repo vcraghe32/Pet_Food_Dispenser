@@ -1,6 +1,6 @@
 # Welcome to the Media folder
  
-Inside this folder are the sketches and diagrams which were used during the project brainstorm. 
+Inside this folder are the sketches and diagrams that were used during the project brainstorm. 
 The design ideas varied from an Archimedes screw to using gears as gates to a food wheel. 
  
 A challenge of this project was to be creative and work without instructions. A key takeaway from it is that engaging 
@@ -12,9 +12,10 @@ in brainstorming and creating sketches makes it easier to visualize a project an
  
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Archimedes_Screw_Design_Idea.JPG.jpg" width="350">
  
-The Archimedes screw design was our original idea for creating a pet food dispenser. Here were the basic parts of this idea:
+The Archimedes screw design was our original idea for creating a pet food dispenser. Here were the basic parts of this 
+idea:
  
-* A gate which opened up to an area where food could be stored for further use.
+* A gate that opened up to an area where food could be stored for further use.
  
 * An Archimedes screw be inclined so that the food serving size could be regulated. If the Archimedes screw tilted 
   downward or level, food would be pulled by gravity and be dispensed in an unregulated fashion.
@@ -37,19 +38,19 @@ The two gears design was our second idea for creating a pet food dispenser. Here
  
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Brainstorm.JPG" width="450">
  
-The water wheel-like design is our third and, currently, final idea for creating a pet food dispenser. 
+The water wheel-like design was our third and final idea for creating a pet food dispenser. 
 Here are the basic parts of this idea:
  
 * A storage area or funnel, which is inclined so that food pellets have a gravitational inclination toward a hole at 
   the bottom. 
  
-* A water wheel-like structure, which the food pellets fall into from the storage area or funnel. Note that the water-wheel-like 
-  structure has spaces in it that are cut out so that food can fall into them.
+* A water wheel-like structure, which the food pellets fall into from the storage area or funnel. Note that the 
+  water-wheel-like structure has spaces in it that are cut out so that food can fall into them.
  
  * Additionally, a certain amount of food pellets would be dispensed per rotation, making measurement simpler.
   
-* Some rubber hinge flaps, which are anchored to the funnel so that food does not overflow out of the water wheel-like 
-  structure and spill.
+* Some rubber hinge flaps (this ended up not being used), which are anchored to the funnel so that food does not 
+  overflow out of the water wheel-like structure and spill.
  
 * A slide-like structure where the food pellets would be dumped onto. The food pellets would then slide down the slide 
   and into a bowl. 
@@ -60,7 +61,8 @@ Here are the basic parts of this idea:
  
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Planning.JPG" width="400">
  
-These are the measurements for the first (current) versions of our water wheel, hinge (for opening the battery holder/food container), and funnel walls. 
+These are the measurements for the water wheel, hinge 
+(for opening the battery holder / food container), and funnel walls. 
  
  
 

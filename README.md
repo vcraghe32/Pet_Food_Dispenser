@@ -1,7 +1,6 @@
 # Pet Food Dispenser
 
 **Note** - For more information about this project, please feel free to visit our [project GoogleDoc](https://docs.google.com/document/d/1ZKXdEp18WFhlqO-TDtYp-zZMlVuGLO5934JrBp6huCs/edit?usp=sharing). The project GoogleDoc contains inventory, idea brainstorms, schedule, cute pet pictures, and initial project ideas.
-[project Whiteboard](https://www.whiteboard.chat/board/98881ae5-cb39-46fe-b3e7-05e48ab4fd4d-pgNum-1).
 
 # Overview
 After completing the basic OnShape and CircuitPython assignments, the next assignment was the first Engineering III 
@@ -43,7 +42,7 @@ which would be hard to rival when done by humans.
 ![Pet Food Dispenser Archimedes Screw Design](./Media/Pet_Food_Dispenser-Archimedes_Screw_Design_Idea.JPG.jpg)
 
 The brainstorm began with the idea of an Archimedes screw. The basic components of the design were an Archimedes screw, 
-rotated by a continuous rotation servo and a hole-shaped dispensing area for pouring the food into. 
+a continuous rotation servo that rotated the Archimedes screw, and a hole-shaped dispensing area for pouring the food into. 
 Additionally, the rate by which food was supplied to a pet would be determined by the speed of the continuous-rotation 
 servo. Finally, the design included an inclined plane for the food to travel on after being transported by the 
 Archimedes screw. The inclined plane would lead to a pet food bowl or to space where the pet could eat the food.
@@ -71,26 +70,30 @@ the design seemed flawed, so we brainstormed again.
 ### Water Wheel
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Brainstorm.JPG" width="450">
 
-Our second to last brainstorm idea that we will be using is a water-wheel-like design that will dispense pet food pellets 
-instead of water. The food flows into the small containers inside the food wheel and then moves in a circular motion. 
-The pull of gravity and the push of a continuous rotation servo turn the continuous rotation servo, and the food pellets 
-drop when the container faces downwards. The food is contained by rubber hinge flaps while it is being filled up to keep 
-the small containers in the food wheel closed. When the wheel does a complete rotation a certain quantity of food is 
-dispensed, so it is easy to measure and provide serving sizes. In addition, when the food drops from the small 
-containers into the box, an inclined plane will bring the food down to the bowl. 
+Our second to last brainstorm idea was a water-wheel-like design would dispense pet food pellets 
+instead of water. This was slightly modified to make a better version later on (see 180 servo). 
+The food would flow into the small containers inside the food wheel and then would move in a circular 
+motion. The pull of gravity and the push of a continuous rotation servo would turn the continuous rotation servo, and 
+the food pellets would drop when the container faced downward. The food would be contained by rubber hinge flaps 
+while it would be filling up to keep the small containers in the food wheel closed. When the wheel would do a complete 
+rotation, a certain quantity of food would be dispensed, so it would be easy to measure and provide serving sizes. In 
+addition, when the food would drop from the small containers into the box, an inclined plane would bring the food down 
+to the bowl. 
 
 ### 180 servo- Final approach
 
-The last design that we ended up using for our final project was a 180 servo design! This was because 180 servos have more strength and are easier to accurately position. The mechanism works by turning the cup to fill it up, dumping it down into the box, and then sliding the food down.
+The last design that we ended up using for our final project was a 180 servo design! It was similar to the water wheel 
+design. It was chosen because 180 servos have more strength and are easier to accurately position. The mechanism works 
+by turning the cup to fill it up, dumping it down into the box, and then sliding the food down.
 
 ### Project Design and Measurements
 
 <img src="https://github.com/vcraghe32/Pet_Food_Dispenser/blob/main/Media/Pet_Food_Dispenser-Food_Wheel_Design_Planning.JPG" width="400">
 
-These are the measurements for the first (current) versions of our water wheel, hinge 
+These are the measurements for the first water wheel, hinge 
 (for opening the battery holder/food container), and funnel walls. The water wheel design worked; however, the 
-funnel design was difficult to mate together in OnShape, so it was then decided to create a box with a 3D design insert that 
-would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
+funnel design was difficult to mate together in OnShape, so it was then decided to create a box with a 3D design insert 
+that would act as inclined planes around the hole of the box so that the food moves down to the water wheel. 
 
 
 # Schedule (all online school)
@@ -128,7 +131,8 @@ This OnShape document will contain the CAD for our project.
 
 ## OnShape Lessons - Violet
 
-* Communicating design ideas over zoom can be difficult, so we found that creating simple cardboard prototypes of our designs helped illustrate our ideas, in addition to using the whiteboard website and sharing our screens. 
+* Communicating design ideas over zoom can be difficult, so we found that creating simple cardboard prototypes of our 
+  designs helped illustrate our ideas, in addition to using the whiteboard website and sharing our screens. 
 
 * Be sure to assemble the correct version of the part that you will be using in real life. I made the mistake of 
   assembling everything with the standard servo arm and base instead of the micro servo arm and base.
@@ -136,18 +140,26 @@ This OnShape document will contain the CAD for our project.
 * Naming OnShape parts and sketches help to organize information and is useful when reflecting/modifying a design.
 
 * "Analysis paralysis," when there is a seemingly endless loop of altering and switching designs, can lead to time being 
-  unnecessarily used up. We switched our design from a continuous rotation design(water wheel) to a 180 cup-filling design. It requires alterations to the wheel and the position of the funnel wall, but the rest of the design remained the same.
+  unnecessarily used up. We switched our design from a continuous rotation design(water wheel) to a 180 cup-filling 
+  design. It requires alterations to the wheel and the position of the funnel wall, but the rest of the design remained 
+  the same.
 
 * In Engineering CAD design, it is almost always possible to make one more improvement or adjustment. It can be hard to 
   stick with a design that is not perfect, but it is important to recognize the balance between design and testing.
 
-* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. This is a good time to document on GitHub and work on future design elements. I worked on the outer walls, metro express and battery holder holes, and the hinge design. 
+* Materials can take up to a month to obtain, so be sure to have other things to do while you wait. 
+  This is a good time to document on GitHub and work on future design elements. I worked on the outer walls, metro 
+  express and battery holder holes, and the hinge design. 
 
-* Be sure to update your drawing on Onshape before laser cutting - it's the orange circle button at the top left. We didn't update the sketch for one of the servo walls and the back wall, so it didn't fit into the new version of the box. There were several laser-cut parts that did not work because of design errors. Here are some of them: 
+* Be sure to update your drawing on OnShape before laser cutting - it's the orange circle button at the top left. 
+  We didn't update the sketch for one of the servo walls and the back wall, so it didn't fit into the new version of the 
+  box. There were several laser-cut parts that did not work because of design errors. Here are some of them: 
 
 ![Spare Servo Walls](./Media/Pet_Food_Dispenser-SpareServoWalls.jpg)
 
-* Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes for the servo screws to secure it in place. This is an image of all the servo walls we had to print out before finding the right fit. 
+* Friction fit for servos is very difficult, so be sure to make a hole with at least 5 mm of wiggle room, and have holes 
+  for the servo screws to secure it in place. This is an image of all the servo walls we had to print out before finding 
+  the right fit. 
 
 ## Coding/CircuitPython Lessons - Luke
 
@@ -182,7 +194,7 @@ This OnShape document will contain the CAD for our project.
 #### Note - The circuit diagram was made on Tinkercad, which does not have an Adafruit Metro MO Express import option. The circuit diagram might be changed another time if a better circuit diagram creator is found.
 
 
-# Pet Food Dispsner Briefing/Instructions
+# Pet Food Dispenser Briefing/Instructions
 
 * Here is a .PDF of the instructions and background of the pet food dispenser. The .PDF was printed out and taped onto the final product to provide information for possible viewers and users: 
 [Pet Food Dispenser Briefing](./Engineering_III-Pet_Food_Dispenser-Instructions.pdf)
@@ -208,4 +220,8 @@ Here are some images and a GIF of the final product. The GIF was taken from the 
 
 
 ### Final Note 
-Quite interestingly, it seems that dogs and cats are able to hear the frequencies emitted from the ultrasonic distance sensor. This is something that had not been considered at the beginning of the project and is a good example of how unforeseen variables can somethings appear as a project progresses. The project should be tested with each pet individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, this project can double-up as a candy dispenser :) 
+Quite interestingly, it seems that dogs and cats are able to hear the frequencies emitted from the ultrasonic distance 
+sensor. This is something that had not been considered at the beginning of the project and is a good example of how 
+unforeseen variables can sometimes appear as a project progresses. The project should be tested with each pet 
+individually as responses to the ultrasonic distance sensor might vary, but, if pets are spooked by the frequencies, 
+this project can double-up as a candy dispenser :) 
