@@ -129,7 +129,7 @@ This OnShape document will contain the CAD for our project.
 
 # Lessons Learned
 
-## OnShape Lessons - Violet
+## OnShape Lessons
 
 * Communicating design ideas over zoom can be difficult, so we found that creating simple cardboard prototypes of our 
   designs helped illustrate our ideas, in addition to using the whiteboard website and sharing our screens. 
@@ -161,7 +161,7 @@ This OnShape document will contain the CAD for our project.
   for the servo screws to secure it in place. This is an image of all the servo walls we had to print out before finding 
   the right fit. 
 
-## Coding/CircuitPython Lessons - Luke
+## Coding/CircuitPython Lessons
 
 * For versioning code - documenting the stages of a code's development - it is unnecessary to create separate code files. 
   What had originally been done was creating a code file such as `core_code.py`, then saving a new file as 
